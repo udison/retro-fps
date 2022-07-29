@@ -8,11 +8,11 @@ using Cursor = UnityEngine.Cursor;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public float sensitivity = 5;
-    public float maxDegreesY = 90;
+    [SerializeField] private float sensitivity = 5;
+    [SerializeField] private float maxDegreesY = 89;
 
-    public Transform player;
-    public PlayerInput input;
+    [SerializeField] private Transform player;
+    [SerializeField] private PlayerInput input;
     
     private Vector2 lookDirection = Vector2.zero;
 

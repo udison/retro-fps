@@ -14,7 +14,7 @@ public class HeadBob : MonoBehaviour
     [SerializeField] private Transform camera;
     [SerializeField] private CharacterController charController;
 
-    private float movementMagnitude = 0f;
+    private float movementMagnitude;
 
     private void Awake()
     {
@@ -31,7 +31,7 @@ public class HeadBob : MonoBehaviour
     private void CheckVelocity()
     {
         movementMagnitude = charController.velocity.magnitude;
-        Debug.Log(movementMagnitude);
+
         if (movementMagnitude < velocityThreshold)
         {
             ResetPosition();
