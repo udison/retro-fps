@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
@@ -28,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     
     public void MoveInput(InputAction.CallbackContext value)
     {
-        Vector2 input = value.ReadValue<Vector2>().normalized;
+        Vector2 input = value.ReadValue<Vector2>();
         
         movementInput.x = input.x;
         movementInput.z = input.y;
@@ -56,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         {
             motion.y = 0f;
         }
+        
         motion.y -= gravity * Time.fixedDeltaTime;
     }
 
