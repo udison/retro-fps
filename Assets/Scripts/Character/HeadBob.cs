@@ -16,11 +16,6 @@ public class HeadBob : MonoBehaviour
 
     private float movementMagnitude;
 
-    private void Awake()
-    {
-        charController = GetComponentInParent<CharacterController>();
-    }
-
     private void Update()
     {
         if (!enable) return;
@@ -53,7 +48,8 @@ public class HeadBob : MonoBehaviour
 
     private void Bob()
     {
-        float movementMultiplier = Mathf.Clamp(movementMagnitude, .5f, 2.5f);
+        // TODO: Change frequency based on player velocity
+        // float movementMultiplier = Mathf.Clamp(movementMagnitude, .5f, 2.5f);
 
         Vector3 offset = new Vector3(
             Mathf.Sin(Time.time * frequency * 2) * amplitude,

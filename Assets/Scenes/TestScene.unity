@@ -214,7 +214,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28250
+  m_Name: pb_Mesh28252
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5831,7 +5831,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28264
+  m_Name: pb_Mesh28268
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6051,6 +6051,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 796210983633212494, guid: 5a9e5f6859de71b42946d01d1061b826,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.604514
+      objectReference: {fileID: 0}
+    - target: {fileID: 796210983633212494, guid: 5a9e5f6859de71b42946d01d1061b826,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.604514
+      objectReference: {fileID: 0}
+    - target: {fileID: 796210983633212494, guid: 5a9e5f6859de71b42946d01d1061b826,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3668281
+      objectReference: {fileID: 0}
+    - target: {fileID: 796210983633212494, guid: 5a9e5f6859de71b42946d01d1061b826,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.3668281
+      objectReference: {fileID: 0}
+    - target: {fileID: 796210983633212494, guid: 5a9e5f6859de71b42946d01d1061b826,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 796210983633212494, guid: 5a9e5f6859de71b42946d01d1061b826,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -62.5
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5a9e5f6859de71b42946d01d1061b826,
         type: 3}
       propertyPath: m_Name
@@ -6098,7 +6128,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28236
+  m_Name: pb_Mesh28238
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6412,6 +6442,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1789908335}
+  - component: {fileID: 1789908337}
+  - component: {fileID: 1789908336}
   m_Layer: 6
   m_Name: Arms
   m_TagString: Untagged
@@ -6435,6 +6467,80 @@ Transform:
   m_Father: {fileID: 2040050640}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1789908336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789908334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f645ac0757133849893ad8df1f28e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smooth: 8
+  swayMultiplier: 1.4
+  maxRotation: 7
+--- !u!114 &1789908337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789908334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 5ca7e447b7326964f9707eebd4f7a8e2,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 50b574d7-79ae-4e6c-bb89-f065daa142e0
+    m_ActionName: PlayerControls/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/DualSenseGamepadHID/leftStick/up,/XInputControllerWindows/leftStick/up,/DualSenseGamepadHID/leftStick/down,/XInputControllerWindows/leftStick/down,/DualSenseGamepadHID/leftStick/left,/XInputControllerWindows/leftStick/left,/DualSenseGamepadHID/leftStick/right,/XInputControllerWindows/leftStick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0817c528-9418-4ff2-b1fc-1bfe3fea781c
+    m_ActionName: PlayerControls/Fire[/Mouse/leftButton,/DualSenseGamepadHID/rightTrigger,/XInputControllerWindows/rightTrigger]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1789908336}
+        m_TargetAssemblyTypeName: WeaponSway, Assembly-CSharp
+        m_MethodName: ReceiveLookInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 63660df8-5adc-4ec8-9896-6aabdca40154
+    m_ActionName: PlayerControls/Look[/DualSenseGamepadHID/rightStick/up,/XInputControllerWindows/rightStick/up,/DualSenseGamepadHID1/rightStick/up,/XInputControllerWindows1/rightStick/up,/XInputControllerWindows/rightStick/down,/XInputControllerWindows1/rightStick/down,/DualSenseGamepadHID/rightStick/left,/XInputControllerWindows/rightStick/left,/DualSenseGamepadHID1/rightStick/left,/XInputControllerWindows1/rightStick/left,/DualSenseGamepadHID/rightStick/right,/XInputControllerWindows/rightStick/right,/DualSenseGamepadHID1/rightStick/right,/XInputControllerWindows1/rightStick/right,/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 48140124-032b-494f-b08c-9755deaaa3a2
+    m_ActionName: PlayerControls/Jump[/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: PlayerControls
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1821008793
 GameObject:
   m_ObjectHideFlags: 0
@@ -6573,7 +6679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1afb4f476e847d4583beb513630388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 0.3
+  sensitivity: 0.1
   maxDegreesY: 89
   player: {fileID: 1730220621}
   input: {fileID: 2040050641}
